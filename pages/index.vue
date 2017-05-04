@@ -6,6 +6,23 @@
   </section>
 </template>
 
+<script>
+export default {
+  asyncData () {
+    return {
+      keyword: 'Johann Headley',
+      onOff: true
+    }
+  },
+  methods: {
+    toggleOnOff() {
+      this.onOff = !this.onOff;
+    }
+  }
+}
+</script>
+
+
 <style scoped>
 .title
 {
