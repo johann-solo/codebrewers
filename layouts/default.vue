@@ -18,38 +18,35 @@ export default {
 }
 </script>
 
-<style>
-.container
-{
-  margin: 0;
-  width: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
+<style lang="sass">
 
-.button, .button:visited
-{
-  display: inline-block;
-  color: #3B8070;
-  letter-spacing: 1px;
-  background-color: #fff;
-  border: 2px solid #3B8070;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px 45px;
-}
+    ::selection
+      background: #3B8070
+      color: white
+    .container
+      margin: 0
+      width: 100%
+      padding: 100px 0
+      text-align: center
 
-.button:hover, .button:focus
-{
-  color: #fff;
-  background-color: #3B8070;
-}
+    .button, .button:visited
+      display: inline-block  
+      color: #3B8070
+      letter-spacing: 1px
+      background-color: #fff
+      border: 2px solid #3B8070
+      text-decoration: none
+      text-transform: uppercase
+      padding: 15px 45px
 
-.title
-{
-  color: #505153;
-  font-weight: 300;
-  font-size: 2.5em;
-  margin: 0;
-}
+    .button:hover, .button:focus
+      color: #fff
+      background-color: #3B8070
+
+    .title
+      color: #505153
+      font-weight: 300
+      font-size: 2.5em
+      margin: 0
+
 </style>
