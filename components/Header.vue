@@ -1,10 +1,22 @@
 <template>
-  <header class="">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
-
-  </header>
+  <h1 class="red">Hello {{ name }}!</h1>
 </template>
+
+<script>
+export default {
+  data () {
+    return { name: 'world' }
+  },
+  methods: {
+    superTest () {
+      return { number: 100 }
+    }
+  }
+}
+</script>
+
+<style>
+.red {
+  color: red;
+}
+</style>
