@@ -2,17 +2,20 @@
   <div>
     <my-header/>
     <nuxt/>
+    <my-form/>
     <my-footer/>
   </div>
 </template>
 
 <script>
 import MyHeader from '~components/Header.vue'
+import MyForm from '~components/Form.vue'
 import MyFooter from '~components/Footer.vue'
 
 export default {
   components: {
     MyHeader,
+    MyForm,
     MyFooter
   }
 }
@@ -23,12 +26,7 @@ export default {
     ::selection
       background: #3B8070
       color: white
-    .container
-      margin: 0
-      width: 100%
-      padding: 100px 0
-      text-align: center
-
+    
     .button, .button:visited
       display: inline-block  
       color: #3B8070
@@ -48,5 +46,9 @@ export default {
       font-weight: 300
       font-size: 2.5em
       margin: 0
+
+
+
+
 
 </style>
