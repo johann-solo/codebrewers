@@ -6,11 +6,6 @@
 export default {
   data () {
     return { name: 'world' }
-  },
-  methods: {
-    superTest () {
-      return { number: 100 }
-    }
   }
 }
 </script>

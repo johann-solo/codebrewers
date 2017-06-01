@@ -2,18 +2,26 @@
   <div>
     <my-header/>
     <nuxt/>
+    <cb-button :onClick="consoleClick">Button Text</cb-button>
     <my-footer/>
   </div>
 </template>
 
 <script>
 import MyHeader from '~components/Header.vue'
+import CbButton from '~components/cb-button.vue'
 import MyFooter from '~components/Footer.vue'
 
 export default {
   components: {
     MyHeader,
+    CbButton,
     MyFooter
+  },
+  methods: {
+    consoleClick() {
+      console.log('Button Clicked')
+    }
   }
 }
 </script>
