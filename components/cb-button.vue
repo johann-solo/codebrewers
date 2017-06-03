@@ -1,5 +1,5 @@
 <template lang="html">
-  <button type="button" name="button" class="cb-button" @click="onClick">
+  <button type="button" name="button" class="o-Button-cb" @click="onClick">
     <slot>Default Button Text</slot>
   </button>
 </template>
@@ -17,25 +17,24 @@ export default {
 
 <style lang="sass">
 
-  =base-button($mainColor,$hoverColor)
-    border: 2px solid $mainColor
+  @import '../assets/css/variables'
+
+  .o-Button-cb
+    border: 2px solid $color__primary
     background: transparent
     padding: 6px 18px
     text-transform: uppercase
-    color: $mainColor
+    color: $color__primary
     font-family: "Klill", Arial, sans-serif
     font-size: 1.5em
     cursor: pointer
-
+    transition: all 0.1s ease-in-out
     &:hover
-      border-color: $hoverColor
-      color: $hoverColor
-      background: $mainColor
+      color: white
+      background: $color__primary
 
-  .cb-button
-    +base-button(#e74c3c,white)
-
-  .alt
-    +base-button(white,#e74c3c)
+  .o-Button-alt
+    color: $color__primary
+    background: transparent
 
 </style>
