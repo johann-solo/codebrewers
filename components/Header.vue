@@ -36,6 +36,7 @@
         display: none
     ul
       display: flex
+      padding: 0
       li
         flex: 1
 
@@ -50,6 +51,8 @@
       align-items: baseline
       padding: 10px 0
       li
+        &:first-child
+          margin-right: auto
         margin-right: 50px
         &:last-child
           margin-right: 0
